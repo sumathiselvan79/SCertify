@@ -1,0 +1,92 @@
+.decider {
+  display: flex;
+  .main-dashboard {
+    position: relative;
+    width: 25%;
+    border: 1px solid black;
+    color: white;
+    height: fit-content;
+    background-color: black;
+    .dashboard-heading {
+      text-align: left;
+      border: 1px solid rgb(155, 150, 150);
+      border-radius: 30px;
+      display: flex;
+      justify-content: space-between;
+      h1 {
+        margin-left: 20px;
+      }
+      .hide {
+        img {
+          display: block;
+          width: 35px;
+          margin: 20px;
+          cursor: pointer;
+          color: blanchedalmond;
+        }
+      }
+    }
+    .options {
+      text-align: left;
+      color: white;
+      .option-list {
+        border-radius: 30px;
+        h3 {
+          margin: 47.8px 20px;
+        }
+        border: 1px solid rgb(155, 150, 150);
+      }
+      .option-list:hover {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .decider .main-dashboard {
+    font-size: 16px;
+    width: 35%;
+  }
+}
+@media only screen and (max-width: 810px) {
+  .decider .main-dashboard {
+    font-size: 16px;
+    width: 39%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .decider {
+    height: 100%;
+    .main-dashboard {
+      font-size: 15px;
+      width: 100%;
+      position: fixed;
+      .dashboard-heading {
+        .hide {
+          img {
+            display: block;
+            width: 35px;
+            margin: 20px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 550px) {
+  .decider {
+    .main-dashboard {
+      .options {
+        .option-list {
+          h3 {
+            margin: 26px 20px;
+          }
+        }
+      }
+    }
+  }
+}
